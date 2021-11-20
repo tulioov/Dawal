@@ -1,0 +1,208 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/tanques">
+
+
+
+    <com.xw.repo.BubbleSeekBar
+        android:id="@+id/dieselbb"
+        android:layout_width="280dp"
+        android:layout_height="50dp"
+        android:layout_marginLeft="375dp"
+        android:layout_marginTop="100dp"
+        app:bsb_bubble_color="#3f51b5"
+        app:bsb_bubble_text_color="@color/colorPrimaryDark"
+        app:bsb_max="500"
+        app:bsb_min="0"
+        app:bsb_progress="30"
+        app:bsb_second_track_color="@color/colorAccent"
+        app:bsb_section_count="5"
+        app:bsb_section_text_position="bottom_sides"
+        app:bsb_show_progress_in_float="true"
+        app:bsb_show_section_mark="true"
+        app:bsb_show_section_text="true"
+        app:bsb_show_thumb_text="true"
+        app:bsb_track_color="#303f9f" />
+
+    <com.xw.repo.BubbleSeekBar
+        android:id="@+id/agua"
+        android:layout_width="280dp"
+        android:layout_height="50dp"
+        android:layout_marginLeft="375dp"
+        android:layout_marginTop="310dp"
+        app:bsb_bubble_color="#3f51b5"
+        app:bsb_bubble_text_color="@color/colorPrimaryDark"
+        app:bsb_max="500"
+        app:bsb_min="0"
+        app:bsb_progress="0"
+        app:bsb_second_track_color="@color/colorAccent"
+        app:bsb_section_count="5"
+        app:bsb_section_text_position="bottom_sides"
+        app:bsb_show_progress_in_float="true"
+        app:bsb_show_section_mark="true"
+        app:bsb_show_section_text="true"
+        app:bsb_show_thumb_text="true"
+        app:bsb_track_color="#303f9f" />
+
+    <com.xw.repo.BubbleSeekBar
+        android:id="@+id/dieselbe"
+        android:layout_width="280dp"
+        android:layout_height="50dp"
+        android:layout_marginLeft="375dp"
+        android:layout_marginTop="470dp"
+        app:bsb_bubble_color="#3f51b5"
+        app:bsb_bubble_text_color="@color/colorPrimaryDark"
+        app:bsb_max="500"
+        app:bsb_min="0"
+        app:bsb_progress="0"
+        app:bsb_second_track_color="@color/colorAccent"
+        app:bsb_section_count="5"
+        app:bsb_section_text_position="bottom_sides"
+        app:bsb_show_progress_in_float="true"
+        app:bsb_show_section_mark="true"
+        app:bsb_show_section_text="true"
+        app:bsb_show_thumb_text="true"
+        app:bsb_track_color="#303f9f" />
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="200dp"
+        android:layout_height="200dp"
+        android:layout_alignBottom="@+id/SpeedometerIOBB"
+        android:layout_alignLeft="@+id/imageView2"
+        android:layout_alignStart="@+id/imageView2"
+        app:srcCompat="@drawable/motor" />
+
+    <ImageView
+        android:id="@+id/imageView3"
+        android:layout_width="200dp"
+        android:layout_height="200dp"
+        android:layout_marginLeft="200dp"
+        android:layout_marginTop="200dp"
+        app:srcCompat="@drawable/reservdir" />
+    <TextView
+        android:id="@+id/textView15"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="370dp"
+        android:layout_marginTop="200dp"
+        android:text="0.0 PSI"
+        android:textColor="#FF6EC7"
+        android:textSize="20dp" />
+
+
+
+    <ImageView
+        android:id="@+id/imageView2"
+        android:layout_width="200dp"
+        android:layout_height="200dp"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:layout_below="@+id/agua"
+        android:layout_marginEnd="10dp"
+        android:layout_marginRight="10dp"
+        app:srcCompat="@drawable/motor" />
+
+
+    <TextView
+        android:id="@+id/text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="700dp"
+        android:layout_marginTop="250dp"
+        android:text="Motor in"
+        android:textColor="#3f51b5"
+        android:textSize="20dp" />
+
+    <TextView
+        android:id="@+id/textView4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="790dp"
+        android:layout_marginTop="250dp"
+        android:text="Motor out"
+        android:textColor="#3f51b5"
+        android:textSize="20dp" />
+
+    <TextView
+        android:id="@+id/tvinBB"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="730dp"
+        android:layout_marginTop="280dp"
+        android:text="0.0"
+        android:textColor="#3f51b5"
+        android:textSize="20dp" />
+
+    <TextView
+        android:id="@+id/tvoutBB"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="820dp"
+        android:layout_marginTop="280dp"
+        android:text="0.0"
+        android:textColor="#3f51b5"
+        android:textSize="20dp" />
+
+    <com.github.anastr.speedviewlib.AwesomeSpeedometer
+        android:id="@+id/SpeedometerIOBB"
+        android:layout_width="180dp"
+        android:layout_height="180dp"
+        android:layout_marginLeft="700dp"
+        android:layout_marginTop="60dp"
+        app:maxSpeed="20"
+        app:unit="L/h" />
+
+    <com.github.anastr.speedviewlib.AwesomeSpeedometer
+        android:id="@+id/SpeedometerIOBE"
+        android:layout_width="180dp"
+        android:layout_height="180dp"
+        android:layout_marginLeft="700dp"
+        android:layout_marginTop="305dp"
+        app:maxSpeed="20"
+        app:unit="L/h" />
+
+    <TextView
+        android:id="@+id/textView454"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="700dp"
+        android:layout_marginTop="490dp"
+        android:text="Motor in"
+        android:textColor="#3f51b5"
+        android:textSize="20dp" />
+
+    <TextView
+        android:id="@+id/textView455"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="790dp"
+        android:layout_marginTop="490dp"
+        android:text="Motor out"
+        android:textColor="#3f51b5"
+        android:textSize="20dp" />
+
+    <TextView
+        android:id="@+id/tvinBE"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="730dp"
+        android:layout_marginTop="520dp"
+        android:text="0.0"
+        android:textColor="#3f51b5"
+        android:textSize="20dp" />
+
+    <TextView
+        android:id="@+id/tvoutBE"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="820dp"
+        android:layout_marginTop="520dp"
+        android:text="0.0"
+        android:textColor="#3f51b5"
+        android:textSize="20dp" />
+
+</RelativeLayout>

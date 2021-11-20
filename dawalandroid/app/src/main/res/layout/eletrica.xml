@@ -1,0 +1,301 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/background_dark">
+
+    <FrameLayout
+        android:id="@+id/frame"
+        android:layout_width="1000dp"
+        android:layout_height="300dp"
+        android:layout_centerHorizontal="true"
+        android:background="@drawable/dawal">
+
+        <ImageView
+            android:id="@+id/luzboreste"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginLeft="200dp"
+            android:layout_marginTop="60dp"
+            android:visibility="invisible"
+            app:srcCompat="@drawable/luzverde" />
+
+        <ImageView
+            android:id="@+id/luztopo"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_above="@+id/luzbombordo"
+            android:layout_alignEnd="@+id/luzbombordo"
+            android:layout_alignRight="@+id/luzbombordo"
+            android:layout_marginLeft="237dp"
+            android:layout_marginTop="20dp"
+            android:visibility="invisible"
+            app:srcCompat="@drawable/luzamarela" />
+
+        <ImageView
+            android:id="@+id/strobo1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@+id/luztopo"
+            android:layout_alignEnd="@+id/luzboreste"
+            android:layout_alignRight="@+id/luzboreste"
+            android:layout_marginLeft="180dp"
+            android:layout_marginTop="20dp"
+            android:visibility="invisible"
+            app:srcCompat="@drawable/luzbranca" />
+
+        <ImageView
+            android:id="@+id/strobo2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/luzbombordo"
+            android:layout_alignStart="@+id/luzbombordo"
+            android:layout_alignTop="@+id/luzboreste"
+            android:layout_marginLeft="250dp"
+            android:layout_marginTop="40dp"
+            android:visibility="invisible"
+            app:srcCompat="@drawable/luzbranca" />
+
+        <ImageView
+            android:id="@+id/luzalcado"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_below="@+id/luzboreste"
+            android:layout_marginLeft="60dp"
+            android:layout_marginTop="190dp"
+            android:visibility="invisible"
+            app:srcCompat="@drawable/luzamarela" />
+
+        <ImageView
+            android:id="@+id/luzbombordo"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/luzboreste"
+            android:layout_marginLeft="270dp"
+            android:layout_marginTop="70dp"
+            android:layout_toEndOf="@+id/luzboreste"
+            android:layout_toRightOf="@+id/luzboreste"
+            android:visibility="invisible"
+            app:srcCompat="@drawable/luzvermelha" />
+    </FrameLayout>
+
+    <TableLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/frame"
+        android:stretchColumns="*">
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <ToggleButton
+                android:id="@+id/btnluzdetopo"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="Luz de Topo"
+                android:textColor="@android:color/holo_red_dark"
+                android:textOff="Luz de Topo"
+                android:textOn="Luz de Topo"
+                android:textSize="30sp"
+                android:textStyle="normal|bold"
+                tools:textStyle="bold" />
+
+            <ToggleButton
+                android:id="@+id/btnluzdenavegacao"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="Luz de Navegação"
+                android:textColor="@android:color/holo_red_dark"
+                android:textOff="Luz de Navegação"
+                android:textOn="Luz de Navegação"
+                android:textSize="30sp"
+                android:textStyle="normal|bold" />
+
+            <ToggleButton
+                android:id="@+id/btnluzpainel"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="Luz Painel"
+                android:textColor="@android:color/holo_red_dark"
+                android:textOff="Luz Painel"
+                android:textOn="Luz Painel"
+                android:textSize="30sp"
+                android:textStyle="normal|bold" />
+
+            <ToggleButton
+                android:id="@+id/btnbussola"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="Bussola"
+                android:textColor="@android:color/holo_red_dark"
+                android:textOff="Bussola"
+                android:textOn="Bussola"
+                android:textSize="30sp"
+                android:textStyle="normal|bold" />
+        </TableRow>
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <ToggleButton
+                android:id="@+id/btnbuzina"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="Buzina"
+                android:textColor="@android:color/holo_red_dark"
+                android:textOff="Buzina"
+                android:textOn="Buzina"
+                android:textSize="30sp"
+                android:textStyle="normal|bold" />
+
+            <ToggleButton
+                android:id="@+id/btnlimpador"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="Limpador"
+                android:textColor="@android:color/holo_red_dark"
+                android:textOff="Limpador"
+                android:textOn="Limpador"
+                android:textSize="30sp"
+                android:textStyle="normal|bold" />
+
+            <ToggleButton
+                android:id="@+id/btnstrobo"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="Strobo"
+                android:textColor="@android:color/holo_red_dark"
+                android:textOff="Strobo"
+                android:textOn="Strobo"
+                android:textSize="30sp"
+                android:textStyle="normal|bold" />
+
+            <ToggleButton
+                android:id="@+id/btnfarolpopa"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="ToggleButton"
+                android:textColor="@android:color/holo_red_dark"
+                android:textOff="Farol Popa"
+                android:textOn="Farol Popa"
+                android:textSize="30sp"
+                android:textStyle="normal|bold" />
+        </TableRow>
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <ToggleButton
+                android:id="@+id/btnluzmotor"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:text="Luz Motor"
+                android:textColor="@android:color/holo_red_dark"
+                android:textOff="Luz Motor"
+                android:textOn="Luz Motor"
+                android:textSize="30sp"
+                android:textStyle="normal|bold" />
+
+            <ToggleButton
+                android:id="@+id/btncortesia"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:text="Cortesia"
+                android:textColor="@android:color/holo_red_dark"
+                android:textOff="Cortesia"
+                android:textOn="Cortesia"
+                android:textSize="30sp"
+                android:textStyle="normal|bold" />
+
+            <ToggleButton
+                android:id="@+id/toggleButton14"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:text="ToggleButton"
+                android:textColor="@android:color/holo_red_dark"
+                android:textOff="..."
+                android:textOn="..."
+                android:textSize="30sp"
+                android:textStyle="normal|bold" />
+
+            <ToggleButton
+                android:id="@+id/toggleButton13"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:text="ToggleButton"
+                android:textColor="@android:color/holo_red_dark"
+                android:textOff="..."
+                android:textOn="..."
+                android:textSize="30sp"
+                android:textStyle="normal|bold" />
+        </TableRow>
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <ToggleButton
+                android:id="@+id/btnbombaproa1"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:text="Bomba Proa 1"
+                android:textColor="@android:color/holo_red_dark"
+                android:textOff="Bomba Proa 1"
+                android:textOn="Bomba Proa 1"
+                android:textSize="30sp"
+                android:textStyle="normal|bold" />
+
+            <ToggleButton
+                android:id="@+id/btnbombaproa2"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:text="Bomba Proa 2"
+                android:textColor="@android:color/holo_red_dark"
+                android:textOff="Bomba Proa 2"
+                android:textOn="Bomba Proa 2"
+                android:textSize="30sp"
+                android:textStyle="normal|bold" />
+
+            <ToggleButton
+                android:id="@+id/btnbombapopa"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:text="Bomba Popa"
+                android:textColor="@android:color/holo_red_dark"
+                android:textOff="Bomba Popa"
+                android:textOn="Bomba Popa"
+                android:textSize="30sp"
+                android:textStyle="normal|bold" />
+
+            <ToggleButton
+                android:id="@+id/btnaguadoce"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:text="Agua Doce"
+                android:textColor="@android:color/holo_red_dark"
+                android:textOff="Agua Doce"
+                android:textOn="Agua Doce"
+                android:textSize="30sp"
+                android:textStyle="normal|bold" />
+        </TableRow>
+    </TableLayout>
+
+</RelativeLayout>

@@ -1,0 +1,312 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_centerHorizontal="false"
+    android:layout_centerVertical="false">
+
+
+    <TableLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" >
+
+            <FrameLayout
+                android:layout_width="match_parent"
+                android:layout_height="100dp">
+
+            </FrameLayout>
+
+        </TableRow>
+
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" >
+
+            <TextView
+                android:id="@+id/textView23"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:textColor="	#00008B"
+                android:textAlignment="center"
+                android:text="Consumo total BB:"
+                android:textSize="30sp"/>
+
+            <TextView
+                android:id="@+id/consumoTotalBB"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:textAlignment="center"
+                android:textColor="	#00008B"
+                android:text="0.0"
+                android:textSize="30sp"/>
+
+            <TextView
+                android:id="@+id/textView5"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:textAlignment="center"
+                android:text="Consumo Total BE:   "
+                android:textColor="	#00008B"
+                android:textSize="30sp"/>
+
+            <TextView
+                android:id="@+id/consumoTotalBE"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:textAlignment="center"
+                android:textColor="	#00008B"
+                android:text="0.0"
+                android:textSize="30sp"/>
+        </TableRow>
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" >
+
+            <TextView
+                android:id="@+id/textView25"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Tempo de funcionamento:   "
+                android:textColor="	#00008B"
+                android:textAlignment="center"
+                android:textSize="30sp"/>
+
+            <TextView
+                android:id="@+id/tempoFuncionamentoBB"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="00:00:00"
+                android:textColor="	#00008B"
+                android:textAlignment="center"
+                android:textSize="30sp"/>
+
+            <TextView
+                android:id="@+id/textView16"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textAlignment="center"
+                android:text="Tempo de Funcionamento:     "
+                android:textColor="	#00008B"
+                android:textSize="30sp"/>
+
+            <TextView
+                android:id="@+id/tempoFuncionamentoBE"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="00:00:00"
+                android:textColor="	#00008B"
+                android:textAlignment="center"
+                android:textSize="30sp"/>
+        </TableRow>
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:textAlignment="center">
+            <FrameLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+            </FrameLayout>
+
+
+
+            <Button
+                android:id="@+id/btnconnect"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/textView_Status"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentLeft="true"
+                android:layout_marginStart="36dp"
+                android:layout_marginLeft="36dp"
+                android:layout_marginTop="33dp"
+                android:text="Connect:"
+                android:textSize="30sp"/>
+
+
+
+            <TextView
+                android:id="@+id/textView_Status"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentTop="true"
+                android:layout_centerHorizontal="true"
+                android:layout_centerVertical="true"
+                android:layout_marginStart="52dp"
+                android:layout_marginLeft="52dp"
+                android:layout_marginTop="44dp"
+                android:scrollbars="vertical"
+                android:text="Esperando"
+                android:textAppearance="@style/TextAppearance.AppCompat.Body1"
+                android:textColor="#ffcc0000"
+                android:textIsSelectable="true"
+                android:textSize="30sp"/>
+            <Button
+                android:id="@+id/btnReset"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/textView_Status"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentLeft="true"
+                android:layout_marginStart="36dp"
+                android:layout_marginLeft="36dp"
+                android:layout_marginTop="33dp"
+                android:text="Reset"
+                android:textSize="30sp"/>
+        </TableRow>
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" >
+
+            <TextView
+                android:id="@+id/textView27"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="	#00008B"
+                android:text="Velocidade Média:"
+                android:textSize="30sp"/>
+
+            <TextView
+                android:id="@+id/velocMedia"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="	#00008B"
+                android:text="0.0"
+                android:textSize="30sp"/>
+
+            <TextView
+                android:id="@+id/textView19"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="	#00008B"
+                android:text="Distância Percorrida:"
+                android:textSize="30sp"/>
+
+            <TextView
+                android:id="@+id/distPercorrida"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="	#00008B"
+                android:text="0.0"
+                android:textSize="30sp"/>
+        </TableRow>
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" >
+
+            <TextView
+                android:id="@+id/textView29"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="	#00008B"
+                android:text="Velocidade Máxima:"
+                android:textSize="30sp"/>
+
+            <TextView
+                android:id="@+id/velocMax"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="	#00008B"
+                android:text="0.0"
+                android:textSize="30sp"/>
+
+            <TextView
+                android:id="@+id/textView21"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="	#00008B"
+                android:text="Tempo:"
+                android:textSize="30sp"/>
+
+            <TextView
+                android:id="@+id/tempo"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="	#00008B"
+                android:text="0.0"
+                android:textSize="30sp"/>
+
+        </TableRow>
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" >
+
+            <ToggleButton
+                android:id="@+id/btnUnitVolumePorTempo"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@android:color/holo_red_dark"
+                android:textOff="Unidade (L/h)"
+                android:textOn="Unidade (L/m)"
+                android:textSize="30sp"
+                android:textStyle="normal|bold"
+                tools:textStyle="bold" />
+            <ToggleButton
+                android:id="@+id/btnUnitVolume"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@android:color/holo_red_dark"
+                android:textOff="Unidade (L)"
+                android:textOn="Unidade (Ml)"
+                android:textSize="30sp"
+                android:textStyle="normal|bold"
+                tools:textStyle="bold" />
+
+        </TableRow>
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" >
+
+            <ToggleButton
+                android:id="@+id/btnUnitDistancia"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@android:color/holo_red_dark"
+                android:textOff="Unidade (Km)"
+                android:textOn="Unidade (M)"
+                android:textSize="30sp"
+                android:textStyle="normal|bold"
+                tools:textStyle="bold" />
+            <ToggleButton
+                android:id="@+id/btnUnitVelocidade"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@android:color/holo_red_dark"
+                android:textOff="Unidade (Km/h)"
+                android:textOn="Unidade (m/s)"
+                android:textSize="30sp"
+                android:textStyle="normal|bold"
+                tools:textStyle="bold" />
+        </TableRow>
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" >
+
+            <ToggleButton
+            android:id="@+id/btnUnitTempo"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@android:color/holo_red_dark"
+            android:textOff="Unidade (H)"
+            android:textOn="Unidade (M)"
+            android:textSize="30sp"
+            android:textStyle="normal|bold"
+            tools:textStyle="bold" />
+
+        </TableRow>
+
+    </TableLayout>
+
+</RelativeLayout>
