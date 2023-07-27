@@ -23,7 +23,7 @@
             "type": "platformio-debug",
             "request": "launch",
             "name": "PIO Debug",
-            "executable": "c:/DESENVOLVIMENTO/Dawal/dawalarduino/.pio/build/dueUSB/firmware.elf",
+            "executable": "C:/DESENVOLVIMENTO/Pessoal/APPS/Dawal/dawalarduino/.pio/build/dueUSB/firmware.elf",
             "projectEnvName": "dueUSB",
             "toolchainBinDir": "C:/Users/tulio/.platformio/packages/toolchain-gccarmnoneeabi/bin",
             "internalConsoleOptions": "openOnSessionStart",
@@ -37,11 +37,22 @@
             "type": "platformio-debug",
             "request": "launch",
             "name": "PIO Debug (skip Pre-Debug)",
-            "executable": "c:/DESENVOLVIMENTO/Dawal/dawalarduino/.pio/build/dueUSB/firmware.elf",
+            "executable": "C:/DESENVOLVIMENTO/Pessoal/APPS/Dawal/dawalarduino/.pio/build/dueUSB/firmware.elf",
             "projectEnvName": "dueUSB",
             "toolchainBinDir": "C:/Users/tulio/.platformio/packages/toolchain-gccarmnoneeabi/bin",
             "internalConsoleOptions": "openOnSessionStart",
             "svdPath": "C:/Users/tulio/.platformio/platforms/atmelsam/misc/svd/ATSAM3X8E.svd"
+        },
+        {
+            "type": "platformio-debug",
+            "request": "launch",
+            "name": "PIO Debug (without uploading)",
+            "executable": "C:/DESENVOLVIMENTO/Pessoal/APPS/Dawal/dawalarduino/.pio/build/dueUSB/firmware.elf",
+            "projectEnvName": "dueUSB",
+            "toolchainBinDir": "C:/Users/tulio/.platformio/packages/toolchain-gccarmnoneeabi/bin",
+            "internalConsoleOptions": "openOnSessionStart",
+            "svdPath": "C:/Users/tulio/.platformio/platforms/atmelsam/misc/svd/ATSAM3X8E.svd",
+            "loadMode": "manual"
         }
     ]
 }

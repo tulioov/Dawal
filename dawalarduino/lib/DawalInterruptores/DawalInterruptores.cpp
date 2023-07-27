@@ -36,7 +36,8 @@ void DawalInterruptores::setup(){
 }
 void DawalInterruptores::loop(){
 
-  /*Serial.print("Pino 22 - Strobo- ");
+  /**/
+  Serial.print("Pino 22 - Strobo- ");
   Serial.println(digitalRead(22));
   //delay(100);
   Serial.print("Pino 23 - Luz Topo- ");
@@ -79,7 +80,7 @@ void DawalInterruptores::loop(){
   Serial.println(digitalRead(35));
   //delay(100);
   Serial.print("Pino 36 - Bomba Proa 1- ");
-  Serial.println(digitalRead(36));*/
+  Serial.println(digitalRead(36));
 
 
 
